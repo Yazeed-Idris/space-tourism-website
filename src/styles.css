@@ -1,3 +1,71 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+  --heading1-font-size: 150px;
+  --heading2-font-size: 100px;
+  --heading3-font-size: 56px;
+  --heading4-font-size: 32px;
+  --heading5-font-size: 28px;
+  --heading5-letter-spacing: 0.297rem;
+
+  --subheading1-font-size: var(--heading5-font-size);
+  --subheading2-font-size: 14px;
+  --subheading2-letter-spacing: 0.147rem;
+
+  --nav-text-font-size: 16px;
+  --nav-text-letter-spacing: 0.169rem;
+
+  --body-font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bellefair', sans-serif;
+}
+
+h1 {
+  font-size: var(--heading1-font-size);
+}
+
+h2 {
+  font-size: var(--heading2-font-size);
+}
+
+h3 {
+  font-size: var(--heading3-font-size);
+}
+
+h4 {
+  font-size: var(--heading4-font-size);
+}
+
+h5 {
+  font-size: var(--heading5-font-size);
+  letter-spacing: var(--heading5-letter-spacing);
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  font-size: var(--body-font-size);
+}
+
+.subheading1 {
+  font-family: 'Bellefair', sans-serif;
+  font-size: var(--subheading1-font-size);
+}
+
+.subheading2, .nav-text {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.subheading2 {
+  font-size: var(--subheading2-font-size);
+  letter-spacing: var(--subheading2-letter-spacing);
+}
+
+.nav-text {
+  font-size: var(--nav-text-font-size);
+  letter-spacing: var(--nav-text-letter-spacing);
+}
