@@ -9,7 +9,17 @@
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad beatae cumque dignissimos inventore minus
   obcaecati officia pariatur reiciendis sit, tempora tempore veritatis. Excepturi explicabo facere facilis fugit
   perspiciatis suscipit?</p>
-<button class="btn-landing-page mx-3
+<button (click)="toggleActive()"
+  class="btn-landing-page mx-3
 lg:hover:shadow-[0_0_0_88px_rgba(255,255,255,0.1)]
 ">EXPLORE
 </button>
+
+<div [ngClass]="{'active': active}" class="navbar-element py-10 w-fit">
+  ACTIVE
+</div>
+
+<div [ngClass]="{'active': active}" class="slider1 w-10 h-10"></div>
+<div [ngClass]="{'active': active}" class="slider2 w-10 h-10">
+  <p>3</p>
+</div>

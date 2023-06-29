@@ -10,6 +10,54 @@
     lg:text-3xl lg:py-30 lg:px-16 lg:w-68;
     font-family: 'Bellefair', sans-serif;
   }
+
+  .navbar-element {
+    color: #ffffff;
+  }
+
+  .navbar-element.active, .navbar-element.active:hover {
+    box-shadow: 0 -3px 0 #fff inset;
+  }
+
+  .navbar-element:hover {
+    box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.5) inset;
+  }
+
+  .slider1 {
+    background-color: rgba(255, 255, 255, 0.174);
+    @apply rounded-full;
+  }
+
+  .slider1.active, .slider1.active:hover {
+    background-color: hsl(0, 0%, 100%);
+    @apply rounded-full;
+  }
+
+  .slider1:hover {
+    background-color: hsl(0, 0%, 50%);
+    @apply rounded-full;
+  }
+
+
+
+  .slider2.active, .slider2.active:hover {
+    background-color: hsl(0, 0%, 100%);
+    @apply rounded-full;
+    color: hsl(230, 35%, 7%);
+  }
+
+  .slider2:hover {
+    background-color: transparent;
+    @apply rounded-full border-Plain text-Plain;
+  }
+
+
+  .slider2 {
+    background-color: transparent;
+    @apply rounded-full text-Plain border grid place-items-center;
+    border-color: rgba(255, 255, 255, 0.174);
+  }
+
 }
 
 :root {
@@ -83,3 +131,7 @@ p {
   font-size: var(--nav-text-font-size);
   letter-spacing: var(--nav-text-letter-spacing);
 }
+
+
+
+
