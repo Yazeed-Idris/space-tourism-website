@@ -3,6 +3,15 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
 
+@layer components {
+  .btn-landing-page {
+    @apply
+    bg-Plain rounded-full text-Dark
+    lg:text-3xl lg:py-30 lg:px-16 lg:w-68;
+    font-family: 'Bellefair', sans-serif;
+  }
+}
+
 :root {
   --heading1-font-size: 150px;
   --heading2-font-size: 100px;
@@ -19,6 +28,11 @@
   --nav-text-letter-spacing: 0.169rem;
 
   --body-font-size: 18px;
+}
+
+body {
+  background-color: hsl(230, 35%, 7%);
+  color: hsl(0, 0%, 100%);
 }
 
 h1, h2, h3, h4 {
